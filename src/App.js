@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 function App() {
 
-  const [numClics, setNumClics] = useState(0); 
+  const [numClics, setNumClics] = useState(0);
 
   const manejarClick = () => {
     setNumClics(numClics + 1);
@@ -21,16 +21,12 @@ function App() {
   return (
     <div className="App">
       <div className='freecodecamp-logo-contenedor'>
-        <img 
-          className='freecodecamp-logo'
-          src={freeCodeCampLogo}
-          alt='Logo de freeCodeCamp'
-        />
+        <h1 className='text-2xl'>Contador de Clicks</h1>
       </div>
       <div className='contenedor-principal'>
         <Contador
           numClics={numClics}
-        
+
         />
         <Boton
           texto='Clic'
